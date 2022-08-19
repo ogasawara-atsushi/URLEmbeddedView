@@ -11,7 +11,8 @@ let package = Package(
             targets: ["URLEmbeddedView"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/marty-suzuki/URLEmbeddedView.git", .branch("master")
+        .package(url: "https://github.com/marty-suzuki/URLEmbeddedView.git", from: "0.18.0")
+        .fork(package: "URLEmbeddedView", url: "https://github.com/ogasawara-atsushi/URLEmbeddedView.git", .branch("master")),
     ],
     targets: [
         .target(
