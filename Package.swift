@@ -6,13 +6,12 @@ import PackageDescription
 let package = Package(
     name: "URLEmbeddedView",
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "URLEmbeddedView",
             targets: ["URLEmbeddedView"]),
     ],
     dependencies: [
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/marty-suzuki/URLEmbeddedView.git", .branch("master")
     ],
     targets: [
         .target(
